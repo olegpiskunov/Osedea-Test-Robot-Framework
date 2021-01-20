@@ -1,0 +1,349 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 3.2.2 (Python 3.9.1 on darwin)" generated="20210119 16:35:14.024" rpa="false">
+<suite id="s1" name="emailValidation" source="/Users/olegp/Dropbox/My Mac (Olegs-MacBook-Pro.local)/Documents/Projects/RobotFramwork/robotFramworkOsedea/Email Validation/emailValidation.robot">
+<test id="s1-t1" name="Verify email validation">
+<kw name="Navigate To Home Page" library="emailValidationKeywords">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>${SiteUrl}</arg>
+<arg>${Browser}</arg>
+</arguments>
+<msg timestamp="20210119 16:35:14.279" level="INFO">Opening browser 'Chrome' to base url 'https://www.osedea.com/'.</msg>
+<status status="PASS" starttime="20210119 16:35:14.278" endtime="20210119 16:35:18.815"></status>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20210119 16:35:18.816" endtime="20210119 16:35:19.091"></status>
+</kw>
+<kw name="Set Browser Implicit Wait" library="SeleniumLibrary">
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<arguments>
+<arg>${Delay}</arg>
+</arguments>
+<status status="PASS" starttime="20210119 16:35:19.092" endtime="20210119 16:35:19.094"></status>
+</kw>
+<status status="PASS" starttime="20210119 16:35:14.278" endtime="20210119 16:35:19.094"></status>
+</kw>
+<kw name="Home Page Should Be Open" library="emailValidationKeywords">
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<doc>Waits until ``text`` appears on the current page.</doc>
+<arguments>
+<arg>Custom software development company</arg>
+</arguments>
+<status status="PASS" starttime="20210119 16:35:19.096" endtime="20210119 16:35:19.127"></status>
+</kw>
+<kw name="Title Should Be" library="SeleniumLibrary">
+<doc>Verifies that the current page title equals ``title``.</doc>
+<arguments>
+<arg>Custom software development company</arg>
+</arguments>
+<msg timestamp="20210119 16:35:19.132" level="INFO">Page title is 'Custom software development company'.</msg>
+<status status="PASS" starttime="20210119 16:35:19.127" endtime="20210119 16:35:19.132"></status>
+</kw>
+<status status="PASS" starttime="20210119 16:35:19.095" endtime="20210119 16:35:19.132"></status>
+</kw>
+<kw name="Scroll down to the Explore Our Culture button" library="emailValidationKeywords">
+<kw name="Execute Javascript" library="SeleniumLibrary">
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<arguments>
+<arg>window.scrollTo(2670,2100)</arg>
+</arguments>
+<msg timestamp="20210119 16:35:19.134" level="INFO">Executing JavaScript:
+window.scrollTo(2670,2100)
+Without any arguments.</msg>
+<status status="PASS" starttime="20210119 16:35:19.133" endtime="20210119 16:35:19.138"></status>
+</kw>
+<status status="PASS" starttime="20210119 16:35:19.133" endtime="20210119 16:35:19.139"></status>
+</kw>
+<kw name="Should click on the Explore Our Culture button" library="emailValidationKeywords">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>css:span.styles__LinkText-f5qq3r-1</arg>
+<arg>1</arg>
+</arguments>
+<status status="PASS" starttime="20210119 16:35:19.139" endtime="20210119 16:35:19.161"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>css:span.styles__LinkText-f5qq3r-1</arg>
+</arguments>
+<msg timestamp="20210119 16:35:19.161" level="INFO">Clicking element 'css:span.styles__LinkText-f5qq3r-1'.</msg>
+<status status="PASS" starttime="20210119 16:35:19.161" endtime="20210119 16:35:19.253"></status>
+</kw>
+<status status="PASS" starttime="20210119 16:35:19.139" endtime="20210119 16:35:19.253"></status>
+</kw>
+<kw name="Team Culture Should Be Open" library="emailValidationKeywords">
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<doc>Waits until ``text`` appears on the current page.</doc>
+<arguments>
+<arg>Culture</arg>
+<arg>2</arg>
+</arguments>
+<status status="PASS" starttime="20210119 16:35:19.254" endtime="20210119 16:35:19.287"></status>
+</kw>
+<kw name="Title Should Be" library="SeleniumLibrary">
+<doc>Verifies that the current page title equals ``title``.</doc>
+<arguments>
+<arg>Custom software development company</arg>
+</arguments>
+<msg timestamp="20210119 16:35:19.292" level="INFO">Page title is 'Custom software development company'.</msg>
+<status status="PASS" starttime="20210119 16:35:19.287" endtime="20210119 16:35:19.292"></status>
+</kw>
+<status status="PASS" starttime="20210119 16:35:19.253" endtime="20210119 16:35:19.292"></status>
+</kw>
+<kw name="Scroll down to the Contact us button" library="emailValidationKeywords">
+<kw name="Execute Javascript" library="SeleniumLibrary">
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<arguments>
+<arg>window.scrollTo(900,900)</arg>
+</arguments>
+<msg timestamp="20210119 16:35:19.293" level="INFO">Executing JavaScript:
+window.scrollTo(900,900)
+Without any arguments.</msg>
+<status status="PASS" starttime="20210119 16:35:19.293" endtime="20210119 16:35:19.298"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>2</arg>
+</arguments>
+<msg timestamp="20210119 16:35:21.300" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20210119 16:35:19.298" endtime="20210119 16:35:21.300"></status>
+</kw>
+<status status="PASS" starttime="20210119 16:35:19.292" endtime="20210119 16:35:21.300"></status>
+</kw>
+<kw name="Should click on the Contact us button" library="emailValidationKeywords">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>${Contact us button}</arg>
+</arguments>
+<status status="PASS" starttime="20210119 16:35:21.302" endtime="20210119 16:35:21.328"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${Contact us button}</arg>
+</arguments>
+<msg timestamp="20210119 16:35:21.329" level="INFO">Clicking element 'css:button.styles__Button-sc-2hgbho-0'.</msg>
+<status status="PASS" starttime="20210119 16:35:21.328" endtime="20210119 16:35:21.365"></status>
+</kw>
+<status status="PASS" starttime="20210119 16:35:21.301" endtime="20210119 16:35:21.365"></status>
+</kw>
+<kw name="Team Contact Should Be Open" library="emailValidationKeywords">
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<doc>Waits until ``text`` appears on the current page.</doc>
+<arguments>
+<arg>${Contact Title}</arg>
+<arg>2</arg>
+</arguments>
+<status status="PASS" starttime="20210119 16:35:21.366" endtime="20210119 16:35:21.403"></status>
+</kw>
+<kw name="Title Should Be" library="SeleniumLibrary">
+<doc>Verifies that the current page title equals ``title``.</doc>
+<arguments>
+<arg>Software team culture</arg>
+</arguments>
+<msg timestamp="20210119 16:35:21.409" level="INFO">Page title is 'Software team culture'.</msg>
+<status status="PASS" starttime="20210119 16:35:21.403" endtime="20210119 16:35:21.409"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>2</arg>
+</arguments>
+<msg timestamp="20210119 16:35:23.412" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20210119 16:35:21.409" endtime="20210119 16:35:23.412"></status>
+</kw>
+<status status="PASS" starttime="20210119 16:35:21.365" endtime="20210119 16:35:23.413"></status>
+</kw>
+<kw name="Should fill out all text boxes" library="emailValidationKeywords">
+<kw name="Title Should Be" library="SeleniumLibrary">
+<doc>Verifies that the current page title equals ``title``.</doc>
+<arguments>
+<arg>${Contact Title} us</arg>
+</arguments>
+<msg timestamp="20210119 16:35:23.422" level="INFO">Page title is 'Contact us'.</msg>
+<status status="PASS" starttime="20210119 16:35:23.414" endtime="20210119 16:35:23.422"></status>
+</kw>
+<status status="PASS" starttime="20210119 16:35:23.413" endtime="20210119 16:35:23.422"></status>
+</kw>
+<kw name="Negative test case email validation" library="emailValidationKeywords">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>${id=firstName}</arg>
+</arguments>
+<status status="PASS" starttime="20210119 16:35:23.423" endtime="20210119 16:35:23.442"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${id=firstName}</arg>
+<arg>${Test}</arg>
+</arguments>
+<msg timestamp="20210119 16:35:23.442" level="INFO">Typing text 'Test' into text field 'id=firstName'.</msg>
+<status status="PASS" starttime="20210119 16:35:23.442" endtime="20210119 16:35:23.617"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>id=lastName</arg>
+<arg>${Test}</arg>
+</arguments>
+<msg timestamp="20210119 16:35:23.617" level="INFO">Typing text 'Test' into text field 'id=lastName'.</msg>
+<status status="PASS" starttime="20210119 16:35:23.617" endtime="20210119 16:35:23.683"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>id=subject</arg>
+<arg>${Test}</arg>
+</arguments>
+<msg timestamp="20210119 16:35:23.683" level="INFO">Typing text 'Test' into text field 'id=subject'.</msg>
+<status status="PASS" starttime="20210119 16:35:23.683" endtime="20210119 16:35:23.750"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${id=email}</arg>
+<arg>${Test}</arg>
+</arguments>
+<msg timestamp="20210119 16:35:23.750" level="INFO">Typing text 'Test' into text field 'id=email'.</msg>
+<status status="PASS" starttime="20210119 16:35:23.750" endtime="20210119 16:35:23.834"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>css=[id="note"]</arg>
+</arguments>
+<msg timestamp="20210119 16:35:23.834" level="INFO">Clicking element 'css=[id="note"]'.</msg>
+<status status="PASS" starttime="20210119 16:35:23.834" endtime="20210119 16:35:23.901"></status>
+</kw>
+<kw name="Element Text Should Be" library="SeleniumLibrary">
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<arguments>
+<arg>//*[@data-errormessage='Please enter a valid email address.']</arg>
+<arg>${Email Text}</arg>
+</arguments>
+<msg timestamp="20210119 16:35:23.901" level="INFO">Verifying element '//*[@data-errormessage='Please enter a valid email address.']' contains exact text 'Email'.</msg>
+<status status="PASS" starttime="20210119 16:35:23.901" endtime="20210119 16:35:23.925"></status>
+</kw>
+<kw name="Clear Element Text" library="SeleniumLibrary">
+<doc>Clears the value of the text-input-element identified by ``locator``.</doc>
+<arguments>
+<arg>${id=email}</arg>
+</arguments>
+<status status="PASS" starttime="20210119 16:35:23.925" endtime="20210119 16:35:23.950"></status>
+</kw>
+<status status="PASS" starttime="20210119 16:35:23.423" endtime="20210119 16:35:23.951"></status>
+</kw>
+<kw name="Positive test case email validation" library="emailValidationKeywords">
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${id=email}</arg>
+<arg>test@test.com</arg>
+</arguments>
+<msg timestamp="20210119 16:35:23.951" level="INFO">Typing text 'test@test.com' into text field 'id=email'.</msg>
+<status status="PASS" starttime="20210119 16:35:23.951" endtime="20210119 16:35:24.059"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>id=note</arg>
+<arg>${Test}</arg>
+</arguments>
+<msg timestamp="20210119 16:35:24.059" level="INFO">Typing text 'Test' into text field 'id=note'.</msg>
+<status status="PASS" starttime="20210119 16:35:24.059" endtime="20210119 16:35:24.129"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${Contact us button}</arg>
+</arguments>
+<msg timestamp="20210119 16:35:24.130" level="INFO">Clicking element 'css:button.styles__Button-sc-2hgbho-0'.</msg>
+<status status="PASS" starttime="20210119 16:35:24.130" endtime="20210119 16:35:24.193"></status>
+</kw>
+<status status="PASS" starttime="20210119 16:35:23.951" endtime="20210119 16:35:24.194"></status>
+</kw>
+<kw name="Submit Credentials" library="emailValidationKeywords">
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<doc>Waits until ``text`` appears on the current page.</doc>
+<arguments>
+<arg>${Contact Title}</arg>
+<arg>2</arg>
+</arguments>
+<status status="PASS" starttime="20210119 16:35:24.194" endtime="20210119 16:35:24.200"></status>
+</kw>
+<kw name="Element Text Should Be" library="SeleniumLibrary">
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<arguments>
+<arg>css:.common__HeadingTwo-sc-1bugy2q-7</arg>
+<arg>${Text Message}</arg>
+</arguments>
+<msg timestamp="20210119 16:35:24.200" level="INFO">Verifying element 'css:.common__HeadingTwo-sc-1bugy2q-7' contains exact text 'Questions, comments, coffee invitations — we’d love to hear from you. Send us a note and we’ll get back to you ASAP.'.</msg>
+<status status="PASS" starttime="20210119 16:35:24.200" endtime="20210119 16:35:24.217"></status>
+</kw>
+<kw name="Element Text Should Be" library="SeleniumLibrary">
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<arguments>
+<arg>css:.common__HeadingThree-sc-1bugy2q-8</arg>
+<arg>${Submit Message}</arg>
+</arguments>
+<msg timestamp="20210119 16:35:24.217" level="INFO">Verifying element 'css:.common__HeadingThree-sc-1bugy2q-8' contains exact text 'Your message is on its way!'.</msg>
+<status status="PASS" starttime="20210119 16:35:24.217" endtime="20210119 16:35:25.213"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${Contact us button}</arg>
+</arguments>
+<msg timestamp="20210119 16:35:25.214" level="INFO">Clicking element 'css:button.styles__Button-sc-2hgbho-0'.</msg>
+<status status="PASS" starttime="20210119 16:35:25.214" endtime="20210119 16:35:25.250"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>2</arg>
+</arguments>
+<msg timestamp="20210119 16:35:27.251" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20210119 16:35:25.250" endtime="20210119 16:35:27.251"></status>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>${id=firstName}</arg>
+</arguments>
+<status status="PASS" starttime="20210119 16:35:27.251" endtime="20210119 16:35:27.271"></status>
+</kw>
+<status status="PASS" starttime="20210119 16:35:24.194" endtime="20210119 16:35:27.272"></status>
+</kw>
+<status status="PASS" starttime="20210119 16:35:14.277" endtime="20210119 16:35:27.272" critical="yes"></status>
+</test>
+<kw name="Exit Selenium" library="emailValidationKeywords" type="teardown">
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20210119 16:35:27.274" endtime="20210119 16:35:27.378"></status>
+</kw>
+<status status="PASS" starttime="20210119 16:35:27.274" endtime="20210119 16:35:27.378"></status>
+</kw>
+<status status="PASS" starttime="20210119 16:35:14.026" endtime="20210119 16:35:27.378"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0">Critical Tests</stat>
+<stat pass="1" fail="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" id="s1" name="emailValidation">emailValidation</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
